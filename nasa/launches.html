@@ -1,0 +1,130 @@
+
+<!--Nasa Home-->
+
+<!DOCTYPE html>
+<html lang ="en">
+<!--Head Section -->
+	<head>		
+			<title>Nasa Launches</title>	
+			<meta charset="utf-8">	
+			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  	  		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+			<link rel="shortcut icon" href="pics/favicon.png">
+			<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+<!--Body Section starts here-->
+	<body>
+<!--Header Section-->
+		<header>
+			<a href="nasa.html">
+			<img src="pics/NASA_logo.png" width="60px" alt="Nasa logo"></a>
+<!--Menu Navigation Section-->		
+			<nav>
+				<b><a href="nasa.html">Home</a>
+				<a href="launches.html">Launches</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a></b>
+			    <br/><br/>
+			</nav>
+		</header>
+<!--Header Section ends here-->
+
+<!--Body Container class-->
+		<div class="container">
+		    	<div id="home">
+      			<img src="pics/nasa.jpg" alt="Nasa Image">
+<!--Text Body class-->    	
+	    <div class="product">
+
+	    	<h1 id="launch"></h1>
+
+	    	
+	    		<p>Latitude: <span id="lati"></span><br></p>
+	    		<p>Longitude: <span id="long"></span><br></p>
+
+	    		<p><b>Date & Time:</b> <span id="dat"></span></p>
+
+	    		<h4>The International Space Station is moving at close to 28,000 km/h so its location changes really fast! &nbsp;  The page Auto refreshes every 10 seconds! Keep checking the Latitude and Longitude of Space Station.</h4>
+
+
+
+	    		<h2>About InSight's Launch</h2>
+	    		
+	    		<p>InSight launched under pre-dawn skies from Vandenberg Air Force Base on the central coast of California on May 5, 2018 at 4:05 a.m. PT (7:05 a.m. ET).</p>
+
+	    		<p>The mission's launch period opened May 5 through June 8, 2018, with daily launch windows that lasted two hours per day. Launch opportunities were five minutes apart during each date's launch window. The first opportunity was at 4:05 a.m. PT on May 5.</p>
+
+	    		<p>InSight launched from Launch Complex 3 on an Atlas V-401 rocket provided by United Launch Alliance, Centennial Colorado, a joint venture of Boeing Co. and Lockheed Martin Corp.</p>
+
+	    		<p>The Atlas V is one of the biggest rockets available for interplanetary flight. This is the same type of rocket that launched the Mars Reconnaissance Orbiter in 2005.</p>
+
+	    		<h2>Why InSight Launched from California</h2>
+
+	    		<p>InSight is the first mission to another planet to leave Earth from Vandenberg Air Force Base. Missions to other planets normally launch from NASA's Kennedy Space Center and fly east, over water. That's because launching towards the east adds the momentum of Earth's eastward rotation to the launch vehicle's own thrust. But the Atlas V-401 is powerful enough to fly south towards the sea from Vandenberg Air Force Base. Besides, Vandenberg Air Force Base was more available at this time to accommodate InSight's five-week launch period.</p>
+
+	    		<p>The launch is only the beginning; the trip to Mars takes about six months. The journey is about 301 million miles (485 million kilometers).</p>
+
+	    		<p>InSight lands on Mars on Nov. 26, 2018.</p>
+
+	    		<p><a href="https://mars.nasa.gov/insight/timeline/launch/">Read more here</a></p>
+	   	  		
+	     		</div>
+	    	</div>
+	  	</div>
+	
+<!--Footer Section-->
+	<footer>
+	        <a href="https://www.nasa.gov/about/contact/index.html" target="_blank">Contact Us</a><br/>
+	        <a href="https://www.facebook.com/NASA/" target="_blank">Follow Us
+	        </a><br/>
+	           	<div class="copy">
+			  		&copy; 2019 Nasa Microsite. All rights reserved. 
+		    	</div>
+	</footer>
+
+	<script src="script.js">
+
+		/*
+		var launch = document.getElementById("launch");
+		launch.innerHTML = "Live feed of International space station location.";
+		var da = new Date();
+		document.getElementById("dat").innerHTML = da;
+
+
+		//API JSON fetch Lat & LONG
+		var pos = "http://api.open-notify.org/iss-now.json";
+		async function currentPosition() {
+			// body...
+			var wru = await fetch(pos);
+			var data = await wru.json();
+
+			var newLati = data.iss_position.latitude;
+
+			var newLong = data.iss_position.longitude;
+
+			var nlati = document.getElementById("lati");
+			nlati.textContent = newLati;
+
+			var nlong = document.getElementById("long");
+			nlong.textContent = newLong;
+
+
+
+			//console.log(newLati);
+			//console.log(newLong);
+
+ 			//console.log(data.iss_position.longitude);
+ 			//console.log(data.iss_position.latitude);
+
+			
+		}
+
+		setInterval("location.reload(true);", 10000);
+
+		currentPosition();
+		*/
+
+	</script>
+
+</body>
+</html>
